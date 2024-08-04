@@ -18,14 +18,17 @@ class MyApp extends StatelessWidget{
            alignment: Alignment.center,color: Colors.indigoAccent,),
 
        ),
-       body: Container(child: Text("Hello this is a body of Scaffold"),
+       body: Column(children:[ Text("Hello this is a body of Scaffold"),
+         Container(child:Image.asset('assets/flutter.jpg',fit: BoxFit.contain,),)
+]),
 
-       alignment: Alignment.center,),
        backgroundColor: Colors.cyanAccent,
-       floatingActionButton: FloatingActionButton(child: Icon(Icons.add_circle),
-       onPressed: () => {print("LLL")}),
+       floatingActionButton:  FloatingActionButton.extended(onPressed: () {print("klk");},
+         label: Text("add"),
+         icon: Icon(Icons.add_circle),)
      ),
-   );
+     );
+
     
   }
 }
