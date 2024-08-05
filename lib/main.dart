@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget{
            height: 200,alignment: Alignment.center,),
          //any element in col take center position by default
          Container(child:Image.asset('assets/Dart-logo.png',fit: BoxFit.contain,),),
-               Container(child: Text("Second course",style: TextStyle(fontSize: 30),),height: 200,alignment: Alignment.center,),
+               Container(child: Text("Second course\"Flutter\"",style: TextStyle(fontSize: 30),),height: 200,alignment: Alignment.center,),
                Container(child:Image.asset('assets/flutter.jpg',fit: BoxFit.contain,),),
           Container(child: Text(""),height: 200,)],
                crossAxisAlignment: CrossAxisAlignment.start,),
